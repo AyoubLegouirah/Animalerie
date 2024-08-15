@@ -8,6 +8,7 @@ import static java.lang.Math.random;
 public abstract class Animal {
     public String nom;
     public String sexe;
+    public String caractere;
     public int poids;
     public int taille;
     public int age;
@@ -16,11 +17,12 @@ public abstract class Animal {
 
 
 
-    public Animal(int dateArriver, int ageHumain, int age, int taille, int poids, String sexe, String nom) {
+    public Animal(int dateArriver, int ageHumain, int age, int taille, int poids, String sexe, String nom, String caractere) {
         this.dateArriver = dateArriver;
         this.ageHumain = ageHumain;
         this.age = age;
         this.sexe = sexe;
+        this.caractere = caractere;
         this.taille = taille;
         this.poids = poids;
         this.nom = nom;
@@ -52,6 +54,10 @@ public abstract class Animal {
 
     public int getDateArriver() {
         return dateArriver;
+    }
+
+    public String getCaractere(){
+        return caractere;
     }
 
 
