@@ -68,7 +68,7 @@ public abstract class Animal {
             System.out.println("L'animal " + this.nom + " est mort");
         }
         else {
-            System.out.println("L'animal " + this.nom + " survie");
+            System.out.println("L'animal " + this.nom + " est en vie");
         }
     }
 
